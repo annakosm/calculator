@@ -1,0 +1,75 @@
+input[type=text] {
+  background-color: rgb(13, 44, 145); 
+  border: none;
+  border-bottom: 2px solid  rgb(13, 44, 145); 
+  outline: none;
+  width: 303px;
+  background-position: 10px 10px;
+  border-radius: 12px;
+  height: 30px;
+  margin: auto;
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  color: white;
+}
+
+input[type=button]  {
+  background-color: #6495ED; 
+  border: 1px solid #6495ED; 
+  color: white; /* White text */
+  padding: 16px 26px; /* Some padding */
+  border-radius: 12px;
+  cursor: pointer; /* Pointer/hand icon */
+  text-align: center;
+  width: 10%;
+  display: inline-block;
+}
+
+
+.operators, .numbers:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.operators, .numbers :not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.operators :hover {
+  background-color: #00008B;
+}
+
+
+/* Add a background color on hover */
+.numbers :hover {
+  background-color: #DC143C;
+}
+
+form .display{
+  display: flex;
+  justify-content:flex-end;
+  margin: 20px 0;
+}
+
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  
+}
+
+.operators, .numbers, h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  color: azure;
+}
+
+.central {
+  background-color: #040438;
+}
